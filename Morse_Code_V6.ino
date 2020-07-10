@@ -415,23 +415,7 @@ void LearnWords()
   String morseArray[wordToUse.length()];
   String outputForArray = "";
   int arrayIndex = 0;
-
-  //Transforms the Morse Code String to Array
-  for (int i = 0; i < originalMorse.length(); i++)
-  {
-    char currentSymbol = originalMorse[i];
-    if (currentSymbol == ' ')
-    {
-      morseArray[arrayIndex] = outputForArray;
-      outputForArray = "";
-      arrayIndex++;
-    }
-    else
-    {
-      outputForArray += currentSymbol;
-    }
-  }
-
+ 
   do
   {
     lcd.clear();
